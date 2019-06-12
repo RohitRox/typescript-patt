@@ -1,0 +1,11 @@
+{
+  "Service": {
+    "SputnikDomainURL": "localhost:4000"
+  },
+  "NewRelic": {
+    "AppName": "",
+    "License": "",
+    "LogLevel": "",
+    "DistributedTracing": ""
+  }
+}

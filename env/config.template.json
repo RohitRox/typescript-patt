@@ -1,0 +1,11 @@
+{
+  "Service": {
+    "SputnikDomainURL": "{{ .SputnikDomainURL }}"
+  },
+  "NewRelic": {
+    "AppName": "{{ .NewRelicAppName }}",
+    "License": "{{ .NewRelicLicense }}",
+    "LogLevel": "{{ .NewRelicLogLevel }}",
+    "DistributedTracing": "{{ .NewRelicDistributedTracing }}"
+  }
+}
