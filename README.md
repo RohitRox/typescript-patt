@@ -51,5 +51,14 @@ One the of advanced patterns we need to learn is to use [generics](https://www.t
 *   **[Generics with examples](https://medium.com/@rossbulat/typescript-generics-explained-15c6493b510f)**
 *   **[Extending Interfaces: an example with Express Req/Resp](https://truetocode.com/extend-express-request-and-response-typescript-declaration-merging/)**
 *   **[Clean & Consistent Express.js Controllers](https://khalilstemmler.com/articles/enterprise-typescript-nodejs/clean-consistent-expressjs-controllers/)**
+*   **[SOLID Typescript](https://khalilstemmler.com/articles/solid-principles/solid-typescript/)**
 
 
+**Some patterns in this repo**
+
+- Classes, Base classes and abstract classes => [Controllers Section](./app/controllers/)
+- Interfaces for defining contracts within our code as well as contracts with code outside of our project  => [Cognito Section](./app/services/)
+- Make your own Error => [Errors](./app/lib/)
+- Fighting with Typescript in tests => [Controller spec](./app/controllers/serviceStatus/spec.ts)
+
+The project might not be all complete and not all perfect, but there are also plently of good ideas. Also find some real world usage of advance concepts like abstract classes, generics, type assertion, typescript promises and some domain driven designs.
