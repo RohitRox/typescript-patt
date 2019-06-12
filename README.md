@@ -59,6 +59,29 @@ One the of advanced patterns we need to learn is to use [generics](https://www.t
 - Classes, Base classes and abstract classes => [Controllers Section](./app/controllers/)
 - Interfaces for defining contracts within our code as well as contracts with code outside of our project  => [Cognito Section](./app/services/)
 - Make your own Error => [Errors](./app/lib/)
-- Fighting with Typescript in tests => [Controller spec](./app/controllers/serviceStatus/spec.ts)
+- Fighting with Typescript in tests => [Controller spec](./app/controllers/serviceStatus.spec.ts)
 
 The project might not be all complete and not all perfect, but there are also plently of good ideas. Also find some real world usage of advance concepts like abstract classes, generics, type assertion, typescript promises and some domain driven designs.
+
+**Truth about code auto-completion**
+
+As we get write better types, interfaces and follow patterns, we'll notice that the the editor's auto completion begins to get
+incredibly smart and things happens in real time (I have been using vscode). While this is good, on the flipside anything that is not on the auto correct, there is high chance typescript compiler will think the code is invalid and will fail to accept the code to build.
+This makes sense because typescript is not smart by itself, more we write better types, interfaces and classes, it knows our data structures and becomes smarter with it and if we fail to make typescript understand our code, it will simply fail to be effective.
+I guess our goal should write better typescript to get better auto-completion so that we make most of our code gets auto-completion which makes sure it has been analyzed by typescript compiler and passed all the early bugs and issues.
+
+
+Some screens:
+
+![](images/1.png)
+
+![](images/2.png)
+
+![](images/3.png)
+
+![](images/4.png)
+
+![](images/5.png)
+
+
+While typescript analysis and compiler wont be able to remove 100% of the javascript bugs most of which happens at the run time it surely catches a good percentage of it. While there is a developer time/effort tax that we have to pay, we hope to make it worth it; A postmortem analysis at Airbnb says *38% of bugs at Airbnb could have been prevented by TypeScript*
